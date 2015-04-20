@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/common_titlebar" />
+
+    <!-- 主体 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dessertbg"
+        android:orientation="vertical" >
+
+        <!-- 1st-打印机蓝牙维护 -->
+
+        <RelativeLayout
+            android:id="@+id/set_rl_print"
+            android:layout_width="fill_parent"
+            android:layout_height="68dp"
+            android:background="@drawable/btn_row_click"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="打印机蓝牙设置"
+                android:textColor="#8B8970"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="打印机蓝牙设置"
+                android:scaleType="center"
+                android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            style="@style/divider" />
+        <!-- 1st-密码维护 -->
+
+        <RelativeLayout
+            android:id="@+id/set_rl_modify_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="68dp"
+            android:background="@drawable/btn_row_click"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="密码维护"
+                android:textColor="#8B8970"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="密码维护"
+                android:scaleType="center"
+                android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            style="@style/divider" />
+
+        <!-- 员工维护 -->
+
+        <RelativeLayout
+            android:id="@+id/set_rl_employee"
+            style="@style/set_ll_detail"
+            android:clickable="true"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="员工维护"
+                android:textColor="#8B8970"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="员工维护"
+                android:scaleType="center"
+                android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider2"
+            style="@style/divider" />
+
+        <!-- 账单号初始化 -->
+
+        <RelativeLayout
+            android:id="@+id/set_rl_init_orderno"
+            style="@style/set_ll_detail"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="账单号初始化"
+                android:textColor="#8B8970"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/set_et_init_orderno"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/white"
+                android:gravity="right|center_vertical"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="7"
+                android:paddingRight="15dp"
+                android:text="1234567" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider3"
+            style="@style/divider" />
+
+        <!-- 退出 -->
+
+        <RelativeLayout
+            android:id="@+id/set_rl_exit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_row_click"
+            android:clickable="true" >
+
+            <View
+                android:id="@+id/divider4"
+                style="@style/divider" />
+
+            <TextView
+                android:id="@+id/set_tv_exit"
+                android:layout_width="fill_parent"
+                android:layout_height="68dp"
+                android:layout_below="@+id/divider4"
+                android:gravity="center"
+                android:text="退出"
+                android:textColor="#8B8970"
+                android:textSize="26sp" />
+
+            <View
+                android:id="@+id/divider5"
+                style="@style/divider"
+                android:layout_below="@+id/set_tv_exit" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

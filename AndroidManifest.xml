@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bocs.dodemo.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name="com.bocs.dodemo.application.ApplicationVariable"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.bocs.dodemo.activity.HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bocs.dodemo.activity.WelcomeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.bocs.dodemo.activity.MenuActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.bocs.dodemo.activity.TableOrderActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.bocs.dodemo.activity.SetActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.bocs.dodemo.activity.ModifyPwdActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.bocs.dodemo.activity.EmployeeListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.bocs.dodemo.activity.MenuTempActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.bocs.dodemo.activity.OrderManagementActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.bocs.dodemo.activity.OrderModifyActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <receiver android:name="com.bocs.mpos.receiver.LocaleChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

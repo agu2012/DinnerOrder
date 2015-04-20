@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="18dp" >
+
+    <!-- 图片 -->
+
+    <ImageView
+        android:id="@+id/menu_row_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/dish" />
+
+    <!-- 文字描述 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/menu_row_iv"
+        android:layout_toLeftOf="@+id/rl2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/menu_row_tv_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="菜名"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/menu_row_tv_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="描述"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp" />
+    </LinearLayout>
+    
+    <!-- 定价+选择 -->
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="120dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="right|center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/menu_row_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥790.00"
+            android:textColor="@color/TEXT_RED"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/menu_row_tv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_row_tv_price"
+            android:layout_alignRight="@+id/menu_row_tv_price"
+            android:text="/份"
+            android:textSize="20sp"
+            android:textColor="@color/TEXT_RED" />
+
+        <CheckBox
+            android:id="@+id/menu_row_ck"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/menu_row_tv_unit"
+            android:button="@drawable/reg_checkbox"
+            android:layout_alignRight="@+id/menu_row_tv_price"
+            android:focusable="false" />
+    </RelativeLayout>
+
+</RelativeLayout>

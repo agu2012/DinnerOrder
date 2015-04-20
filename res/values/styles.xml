@@ -1,0 +1,101 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="radioButton">
+        <item name="android:layout_width">135dp</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:background">@drawable/reg_label</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/DARK_GREY</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:button">@null</item>
+    </style>
+    
+    <style name="radioButton_drink">
+        <item name="android:layout_width">135dp</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:background">@drawable/reg_label_drink</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/TEXT_RED</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="radioButton2">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/radiobtn_selector</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!-- 分隔符 -->
+    <style name="divider_short">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+    <style name="divider_short18">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginLeft">18dp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <style name="divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="divider_grey">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <style name="set_ll_detail">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">68dp</item>
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:background">@drawable/btn_row_click</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="tableButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@drawable/button_text_color</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:background">@drawable/button_shape_shadowed</item>
+    </style>
+
+    <style name="redButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">@drawable/btn_red_style</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+</style>
+
+    <!-- 自定义对话框 -->
+    <style name="custom_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dessertbg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/order_manage_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/order_manage_rl" />
+
+    <RelativeLayout
+        android:id="@+id/order_manage_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/LIGHT_GREY" >
+
+        <View
+            android:id="@+id/divider"
+            style="@style/divider"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/order_manage_btn_pay"
+            style="@style/redButton"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:text="付款" />
+    </RelativeLayout>
+
+</RelativeLayout>

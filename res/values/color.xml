@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gold">#b89766</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#18B508</color>
+    <color name="blue">#036BC4</color>   
+    <color name="grey">#999999</color>  
+    <color name="lightGreen">#C3DCB4</color>  
+	<color name="RS_BG">#f3f3f3</color>
+	<color name="RS_PRESS">#D1D1D1</color>
+	<color name="pink">#ffcccc</color><!-- pink -->
+    
+    <color name="divider_bg">#ffe4e4e4</color>	<!-- 分割线-->
+    
+    <color name="radiobg_press">#43859d</color><!-- RadioButton -->
+    <color name="radiobg_normal">#555555</color>
+    <!-- Title 标题栏颜色 -->
+    <color name="TITLE_BG">#a71e32</color>
+    <color name="TITLE_BG_PRESS">#861828</color>
+    <color name="TITLE_BG_DIVIDER">#730822</color>   
+    
+    <!-- Menu -->
+    <color name="TEXT_RED">#DC573D</color>
+    <color name="TEXT_RED_T">#FE9D7B</color>
+    <color name="LIGHT_GREY">#7FF2F0EA</color><!-- 购物车背景 -->
+    <color name="DARK_GREY">#ff6a6a6a</color><!-- 点击按钮-深灰 -->
+    <color name="LIGHT_GREY2">#EFF2F0EA</color><!-- 购物车背景 -->
+    
+    <!-- Dialog -->
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="btn_dialog_pressed">#ffe5e5e5</color>	<!--按钮-主界面-按下 -->
+    <color name="text_blue">#047cff</color> 	<!-- 文本域-对话框-蓝 -->
+    
+    <!-- Table -->
+    <color name="LIGHT_GREEN">#72D318</color>
+    <color name="YELLOW">#FCD20A</color>
+    <color name="DARK_RED">#980C09</color>
+    
+    
+    
+</resources>

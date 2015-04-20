@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dessertbg" >
+
+    <LinearLayout
+        android:id="@+id/table_ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal"
+        android:padding="18dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:text="桌号:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/table_tv_table_no"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <!-- 人数 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="人数:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/table_et_cnt"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2" />
+
+        <!-- 服务员 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="服务员:"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/table_sp_waiter"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/white"
+            android:prompt="@string/table_sp_title"
+            android:spinnerMode="dialog"
+            android:textSize="20sp" >
+        </Spinner>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/table_ll_btn"
+        android:layout_below="@+id/table_ll_info"
+        android:layout_margin="18dp"
+        android:background="@drawable/rectangle"
+        android:padding="18dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioGroup
+                android:id="@+id/table_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/table_rb_s"
+                    style="@style/radioButton2"
+                    android:text="吸烟区"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/table_rb_n"
+                    style="@style/radioButton2"
+                    android:text="禁烟区"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/table_iv_selected"
+                android:layout_width="100dp"
+                android:layout_height="4dp"
+                android:layout_alignBottom="@+id/table_rg"
+                android:background="#33b5e5" />
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/table_vp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rl"
+            android:paddingTop="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/table_ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:orientation="horizontal"
+        android:padding="18dp" >
+
+        <Button
+            android:id="@+id/table_btn_switch_table"
+            style="@style/redButton"
+            android:layout_width="0dp"
+            android:layout_marginRight="9dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="调换餐台" />
+
+        <Button
+            android:id="@+id/table_btn_manage"
+            style="@style/redButton"
+            android:layout_width="0dp"
+            android:layout_marginLeft="9dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="管理订单" />
+    </LinearLayout>
+
+</RelativeLayout>

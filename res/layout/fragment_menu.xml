@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dessertbg"
+    android:orientation="vertical" >
+
+    <!-- Classification Buttons -->
+
+    <ScrollView
+        android:id="@+id/menu_hs"
+        android:layout_width="137dp"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="60dp"
+        android:fadingEdge="@null"
+        android:scrollbars="none" >
+
+        <RadioGroup
+            android:id="@+id/menu_rg_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/menu_rb1"
+                style="@style/radioButton" />
+
+            <RadioButton
+                android:id="@+id/menu_rb2"
+                style="@style/radioButton" />
+
+            <RadioButton
+                android:id="@+id/menu_rb3"
+                style="@style/radioButton" />
+
+            <RadioButton
+                android:id="@+id/menu_rb4"
+                style="@style/radioButton" />
+
+            <RadioButton
+                android:id="@+id/menu_rb5"
+                style="@style/radioButton" />
+
+            <RadioButton
+                android:id="@+id/menu_rb6"
+                style="@style/radioButton" />
+
+            <RadioButton
+                android:id="@+id/menu_rb7"
+                style="@style/radioButton" />
+
+            <RadioButton
+                android:id="@+id/menu_rb8"
+                style="@style/radioButton" />
+
+             <!-- 酒水 -->
+
+            <RadioButton
+                android:id="@+id/menu_rb9"
+                style="@style/radioButton"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/menu_rb10"
+                style="@style/radioButton"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/menu_rb11"
+                style="@style/radioButton"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/menu_rb12"
+                style="@style/radioButton"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/menu_rb13"
+                style="@style/radioButton"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/TEXT_RED" />
+        </RadioGroup>
+    </ScrollView>
+
+    <!-- show menu detail -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/menu_vp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/menu_hs"
+        android:paddingBottom="60dp" />
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true" >
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="@color/LIGHT_GREY"
+            android:paddingBottom="5dp" >
+
+            <View
+                android:id="@+id/divider"
+                style="@style/divider"
+                android:background="@android:color/darker_gray" />
+            <!-- Order button -->
+
+            <Button
+                android:id="@+id/menu_btn_order"
+                style="@style/redButton"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:enabled="false"
+                android:text="@string/orderMenu" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/menu_btn_lan"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/red_circle"
+            android:padding="3dp"
+            android:text="@string/lan"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/menu_tv_total_num"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="110dp"
+            android:gravity="center_vertical"
+            android:paddingTop="16dp"
+            android:text="￥0.00"
+            android:textColor="@color/TEXT_RED"
+            android:textSize="24sp" />
+    </FrameLayout>
+
+</RelativeLayout>

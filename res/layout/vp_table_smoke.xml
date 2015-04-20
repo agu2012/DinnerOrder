@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vp_table_tl_s"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/s1"
+            style="@style/tableButton"
+            android:text="S01" />
+
+        <Button
+            android:id="@+id/s2"
+            style="@style/tableButton"
+            android:text="S02" />
+
+        <Button
+            android:id="@+id/s3"
+            style="@style/tableButton"
+            android:text="S03" />
+
+        <Button
+            android:id="@+id/s4"
+            style="@style/tableButton"
+            android:text="S04" />
+
+        <Button
+            android:id="@+id/s5"
+            style="@style/tableButton"
+            android:text="S05" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/s6"
+            style="@style/tableButton"
+            android:text="S06" />
+
+        <Button
+            android:id="@+id/s7"
+            style="@style/tableButton"
+            android:text="S07" />
+
+        <Button
+            style="@style/tableButton"
+            android:background="@android:color/transparent"
+            android:enabled="false" />
+
+        <Button
+            style="@style/tableButton"
+            android:background="@android:color/transparent"
+            android:enabled="false" />
+
+        <Button
+            style="@style/tableButton"
+            android:background="@android:color/transparent"
+            android:enabled="false" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="menuClass">
+        <item>头盘</item>
+        <item>沙拉</item>
+        <item>汤</item>
+        <item>三明治&amp;汉堡</item>
+        <item>主菜</item>
+        <item>亚洲美食</item>
+        <item>比萨精选</item>
+        <item>甜品</item>
+    </string-array>
+    <string-array name="drinkClass">
+        <item>干白葡萄酒</item>
+        <item>干红葡萄酒</item>
+        <item>光明特选红酒</item>
+        <item>干邑</item>
+        <item>威士忌</item>
+        <item>金酒</item>
+        <item>啤酒</item>
+        <item>软饮</item>
+        <item>鲜榨果汁</item>
+        <item>奶昔</item>
+        <item>矿泉水</item>
+        <item>茶水</item>
+        <item>咖啡</item>
+    </string-array>
+    <string-array name="sTableID">
+        <item>S01</item>
+        <item>S02</item>
+        <item>S03</item>
+        <item>S04</item>
+        <item>S05</item>
+        <item>S06</item>
+        <item>S07</item>
+    </string-array>
+    <string-array name="nTableID">
+        <item>N01</item>
+        <item>N02</item>
+        <item>N03</item>
+        <item>N04</item>
+        <item>N05</item>
+        <item>N06</item>
+        <item>N07</item>
+        <item>N08</item>
+        <item>N09</item>
+        <item>N10</item>
+        <item>N11</item>
+        <item>N12</item>
+        <item>N13</item>
+        <item>N14</item>
+        <item>N15</item>
+        <item>N16</item>
+        <item>N17</item>
+        <item>N18</item>
+        <item>N19</item>
+        <item>N20</item>
+    </string-array>
+
+</resources>

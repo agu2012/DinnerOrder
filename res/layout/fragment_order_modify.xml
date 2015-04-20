@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dessertbg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/order_modify_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/order_modify_rl" />
+
+    <RelativeLayout
+        android:id="@+id/order_modify_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/LIGHT_GREY" >
+
+        <View
+            android:id="@+id/divider"
+            style="@style/divider"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="￥0.00"
+            android:textColor="@color/TEXT_RED"
+            android:textSize="24sp" />
+        
+        <!-- 保存订单修改 -->
+        <Button
+            android:id="@+id/order_modify_btn"
+            style="@style/redButton"
+            android:layout_width="200dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="18dp"
+            android:text="提交" />
+    </RelativeLayout>
+
+</RelativeLayout>

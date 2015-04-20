@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="menuClass">
+        <item>Autipasti \nAppetizers</item>
+        <item>Salad</item>
+        <item>Soup</item>
+        <item>Sandwich &amp; \nBurger</item>
+        <item>Main \ncourses</item>
+        <item>Asian favourites</item>
+        <item>Pizza Promotion</item>
+        <item>Desserts</item>
+    </string-array>
+
+    <string-array name="drinkClass">
+        <item>WHITE WINES</item>
+        <item>RED WINES</item>
+        <item>Guangming selected wine</item>
+        <item>COGNAC</item>
+        <item>WHISKY</item>
+        <item>GIN</item>
+        <item>BEER</item>
+        <item>SOFY DRINK</item>
+        <item>FRESH JUICE</item>
+        <item>MILK SHAKE</item>
+        <item>MINERD WATER</item>
+        <item>TEA</item>
+        <item>COFFEE</item>
+    </string-array>
+</resources>

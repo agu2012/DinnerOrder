@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingTop="10dp" >
+
+    <!-- 图片 -->
+
+    <ImageView
+        android:id="@+id/menu_temp_row_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/dish" />
+
+    <!-- 文字描述 -->
+
+    <LinearLayout
+        android:id="@+id/menu_temp_row_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@+id/menu_temp_row_ll2"
+        android:layout_toRightOf="@+id/menu_temp_row_iv"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/menu_temp_row_tv_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="菜名"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/menu_temp_row_tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥10.00"
+                android:textColor="@color/TEXT_RED"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/menu_temp_row_tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/份"
+                android:textColor="@color/TEXT_RED"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 定价+选择 -->
+
+    <LinearLayout
+        android:id="@+id/menu_temp_row_ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/menu_temp_row_btn_deduce"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_grey_line_circle_style"
+            android:contentDescription="@string/app_name"
+            android:focusable="false"
+            android:text="—"
+            android:textColor="@color/DARK_GREY"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/menu_temp_row_et_cnt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"
+            android:enabled="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="1"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/menu_temp_row_btn_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_grey_line_circle_style"
+            android:focusable="false"
+            android:text="+"
+            android:textColor="@color/TEXT_RED"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+</RelativeLayout>

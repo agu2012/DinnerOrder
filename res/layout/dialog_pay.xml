@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp" >
+
+        <TextView
+            android:id="@+id/dialog_pay_tv_amount_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="消费总计："
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dialog_pay_tv_amount_label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dialog_pay_tv_amount_label"
+            android:layout_toLeftOf="@+id/dialog_pay_tv_amount"
+            android:text="@string/SYMBOL_RMB"
+            android:textColor="@color/TEXT_RED"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dialog_pay_tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/dialog_pay_tv_amount_label"
+            android:textColor="@color/TEXT_RED"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View style="@style/divider_grey" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp" >
+
+        <TextView
+            android:id="@+id/dialog_pay_tv_tip_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="服务费："
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dialog_pay_tv_tip_label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dialog_pay_tv_tip_label"
+            android:layout_toLeftOf="@+id/dialog_pay_tv_tip"
+            android:text="@string/SYMBOL_RMB"
+            android:textColor="@color/TEXT_RED"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dialog_pay_tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/dialog_pay_tv_tip_label"
+            android:textColor="@color/TEXT_RED"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View style="@style/divider_grey" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp" >
+
+        <TextView
+            android:id="@+id/dialog_pay_tv_discount_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="是否打折？"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/dialog_pay_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dialog_pay_tv_discount_label"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/dialog_pay_rb_no_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="否" />
+
+            <RadioButton
+                android:id="@+id/dialog_pay_rb_discount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="是" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_pay_ll_discount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View style="@style/divider_short18" />
+
+        <EditText
+            android:id="@+id/dialog_pay_et_discount"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="18dp"
+            android:background="@android:color/transparent"
+            android:hint="请输入折扣金额"
+            android:digits="1234567890."
+            android:inputType="numberDecimal"
+            android:maxLength="11"
+            android:paddingLeft="10dp"
+            android:saveEnabled="true" />
+
+        <View style="@style/divider_short18" />
+
+        <EditText
+            android:id="@+id/dialog_pay_et_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="18dp"
+            android:background="@android:color/transparent"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="11"
+            android:paddingLeft="10dp"
+            android:saveEnabled="true" />
+    </LinearLayout>
+
+    <View style="@style/divider_grey" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp" >
+
+        <TextView
+            android:id="@+id/dialog_pay_tv_total_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总金额："
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dialog_pay_tv_total_label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dialog_pay_tv_total_label"
+            android:layout_toLeftOf="@+id/dialog_pay_tv_total"
+            android:text="@string/SYMBOL_RMB"
+            android:textColor="@color/TEXT_RED"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dialog_pay_tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dialog_pay_tv_total_label"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/TEXT_RED"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>
